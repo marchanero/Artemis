@@ -29,6 +29,16 @@ class seleccion_del_terapeuta(QtGui.QDialog, therapist_select.Ui_Dialog):
         self.setupUi(self)
         self.carga_imagenes()
 
+        #boton para la apertura de cada una de las ventanas
+        self.save_therapist_button.clicked.connect(self.SegundaVentana)
+
+    def SegundaVentana(self):
+        self.close()
+        window = seleccion_paciente(self)
+        window.show()
+
+
+
     def carga_imagenes(self):
         pixmap_therapist = QPixmap('doctor_small.png')
         pixmap_therapist = pixmap_therapist.scaled(self.therapist_image_label.width(),
@@ -36,11 +46,19 @@ class seleccion_del_terapeuta(QtGui.QDialog, therapist_select.Ui_Dialog):
         self.therapist_image_label.setPixmap(pixmap_therapist)
 
 
+
+
 class seleccion_paciente(QtGui.QDialog, patient_select.Ui_Dialog):
     def __init__(self, parent=None):
         QtGui.QDialog.__init__(self, parent)
         self.setupUi(self)
         self.carga_imagenes_paciente()
+        self.save_patient_button.clicked.connect(self.TerceraVentana)
+
+    def TerceraVentana(self):
+        self.close()
+        window = MyMainWindow(self)
+        window.show()
 
     def carga_imagenes_paciente(self):
         pixmap_patient = QPixmap('patient_small.png')

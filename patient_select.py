@@ -75,9 +75,9 @@ class Ui_Dialog(object):
         self.pushButton = QtGui.QPushButton(self.groupBox_2)
         self.pushButton.setObjectName(_fromUtf8("pushButton"))
         self.verticalLayout.addWidget(self.pushButton)
-        self.pushButton_2 = QtGui.QPushButton(self.groupBox_2)
-        self.pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
-        self.verticalLayout.addWidget(self.pushButton_2)
+        self.save_patient_button = QtGui.QPushButton(self.groupBox_2)
+        self.save_patient_button.setObjectName(_fromUtf8("save_patient_button"))
+        self.verticalLayout.addWidget(self.save_patient_button)
         self.gridLayout.addLayout(self.verticalLayout, 0, 2, 1, 1)
         self.gridLayout_3.addWidget(self.groupBox_2, 0, 0, 1, 1)
 
@@ -91,5 +91,5 @@ class Ui_Dialog(object):
         self.label_8.setText(_translate("Dialog", "Patient id", None))
         self.pushButton_3.setText(_translate("Dialog", "New patient", None))
         self.pushButton.setText(_translate("Dialog", "View data", None))
-        self.pushButton_2.setText(_translate("Dialog", "Save", None))
+        self.save_patient_button.setText(_translate("Dialog", "Save", None))
 
