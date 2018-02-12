@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="168df719-e08f-4c2a-9659-24191138ba9b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/patient_select.py" afterPath="$PROJECT_DIR$/patient_select.py" />
-      <change beforePath="$PROJECT_DIR$/patient_select.ui" afterPath="$PROJECT_DIR$/patient_select.ui" />
+      <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,15 +14,15 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Creacion_ventanas_Pyqt4$main.coverage" NAME="main Coverage Results" MODIFIED="1518425108802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/1_Entregable_GitHub$main.coverage" NAME="main Coverage Results" MODIFIED="1518433186244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_Entregable_GitHub$main.coverage" NAME="main Coverage Results" MODIFIED="1518436618806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
+            <state relative-caret-position="720">
+              <caret line="60" column="77" lean-forward="false" selection-start-line="60" selection-start-column="77" selection-end-line="60" selection-end-column="77" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -67,7 +66,7 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1518432423847" expanded="true" signature="4641:4650" ph="..." />
+                <marker date="1518434049421" expanded="true" signature="4762:4771" ph="..." />
               </folding>
             </state>
           </provider>
@@ -254,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518432540728</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="creacion de la apertura y del cierra de ventanas entre la aplicacion de seleccion del paciente">
+      <created>1518435720110</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1518435720110</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -272,7 +278,7 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23108108" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23513514" sideWeight="0.5050143" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25135136" sideWeight="0.49713466" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25135136" sideWeight="0.49713466" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20405406" sideWeight="0.495702" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23513514" sideWeight="0.49498567" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -313,7 +319,8 @@
     <MESSAGE value="Cambios en las llamadas a las funciones" />
     <MESSAGE value="redefinicion de las ventanas de captura de datos" />
     <MESSAGE value="Creacion de la secuencia de apertura de las ventanas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creacion de la secuencia de apertura de las ventanas" />
+    <MESSAGE value="creacion de la apertura y del cierra de ventanas entre la aplicacion de seleccion del paciente" />
+    <option name="LAST_COMMIT_MESSAGE" value="creacion de la apertura y del cierra de ventanas entre la aplicacion de seleccion del paciente" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -361,7 +368,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1518432423847" expanded="true" signature="4641:4650" ph="..." />
+            <marker date="1518434049421" expanded="true" signature="4762:4771" ph="..." />
           </folding>
         </state>
       </provider>
@@ -405,7 +412,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1518432423847" expanded="true" signature="4641:4650" ph="..." />
+            <marker date="1518434049421" expanded="true" signature="4762:4771" ph="..." />
           </folding>
         </state>
       </provider>
@@ -425,7 +432,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1518432423847" expanded="true" signature="4641:4650" ph="..." />
+            <marker date="1518434049421" expanded="true" signature="4762:4771" ph="..." />
           </folding>
         </state>
       </provider>
@@ -445,7 +452,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1518432423847" expanded="true" signature="4641:4650" ph="..." />
+            <marker date="1518434049421" expanded="true" signature="4762:4771" ph="..." />
           </folding>
         </state>
       </provider>
@@ -465,7 +472,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1518432423847" expanded="true" signature="4641:4650" ph="..." />
+            <marker date="1518434049421" expanded="true" signature="4762:4771" ph="..." />
           </folding>
         </state>
       </provider>
@@ -485,7 +492,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1518432423847" expanded="true" signature="4641:4650" ph="..." />
+            <marker date="1518434049421" expanded="true" signature="4762:4771" ph="..." />
           </folding>
         </state>
       </provider>
@@ -505,7 +512,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1518432423847" expanded="true" signature="4641:4650" ph="..." />
+            <marker date="1518434049421" expanded="true" signature="4762:4771" ph="..." />
           </folding>
         </state>
       </provider>
@@ -662,7 +669,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1518432423847" expanded="true" signature="4641:4650" ph="..." />
+            <marker date="1518434049421" expanded="true" signature="4762:4771" ph="..." />
           </folding>
         </state>
       </provider>
@@ -693,8 +700,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="45" column="62" lean-forward="true" selection-start-line="45" selection-start-column="62" selection-end-line="45" selection-end-column="62" />
+        <state relative-caret-position="720">
+          <caret line="60" column="77" lean-forward="false" selection-start-line="60" selection-start-column="77" selection-end-line="60" selection-end-column="77" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>

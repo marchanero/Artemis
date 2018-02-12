@@ -58,14 +58,14 @@ class seleccion_paciente(QtGui.QDialog, patient_select.Ui_Dialog):
         self.setupUi(self)
         self.carga_imagenes_paciente()
         self.load_patient_button.clicked.connect(self.ventana_carga_paceinte)
-        self.save_patient_button.clicked.connect(self.TerceraVentana)
+        self.save_patient_button.clicked.connect(self.apertura_grabacionDatos)
 
     def ventana_carga_paceinte(self):
         self.close()
         window = load_patient_database(self)
         window.show()
 
-    def TerceraVentana(self):
+    def apertura_grabacionDatos(self):
         self.close()
         window = MyMainWindow(self)
         window.show()
