@@ -49,6 +49,8 @@ class Ui_Dialog(object):
         self.horizontalLayout.addWidget(self.label_8)
         self.therapist_id_text = QtGui.QLineEdit(self.groupBox_2)
         self.therapist_id_text.setMinimumSize(QtCore.QSize(180, 0))
+        self.therapist_id_text.setText(_fromUtf8(""))
+        self.therapist_id_text.setAlignment(QtCore.Qt.AlignCenter)
         self.therapist_id_text.setObjectName(_fromUtf8("therapist_id_text"))
         self.horizontalLayout.addWidget(self.therapist_id_text)
         spacerItem1 = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)

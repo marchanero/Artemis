@@ -3,7 +3,7 @@ import PyQt4
 import numpy as np
 import random
 import main_designer
-import therapist_select,patient_data,patient_data_altaBDD,patient_select
+import therapist_select,patient_data,patient_data_altaBDD,patient_select,patient_database_load
 import sys
 import os
 from PyQt4 import QtGui
@@ -16,6 +16,8 @@ from PyQt4.QtGui import QMainWindow, QLabel, QGridLayout,QWidget, QDialog, QMess
 pg.setConfigOption('background','w')
 pg.setConfigOption('foreground','k')
 
+Id_therapist="N/A"
+Id_patient="N/A"
 ####################################################################################################################
 #Datos entre formularios
 ####################################################################################################################
@@ -30,9 +32,11 @@ class seleccion_del_terapeuta(QtGui.QDialog, therapist_select.Ui_Dialog):
         self.carga_imagenes()
 
         #boton para la apertura de cada una de las ventanas
-        self.save_therapist_button.clicked.connect(self.SegundaVentana)
 
-    def SegundaVentana(self):
+        self.save_therapist_button.clicked.connect(self.SegundaVentana_paciente)
+
+    def SegundaVentana_paciente(self):
+
         self.close()
         window = seleccion_paciente(self)
         window.show()
@@ -53,7 +57,13 @@ class seleccion_paciente(QtGui.QDialog, patient_select.Ui_Dialog):
         QtGui.QDialog.__init__(self, parent)
         self.setupUi(self)
         self.carga_imagenes_paciente()
+        self.load_patient_button.clicked.connect(self.ventana_carga_paceinte)
         self.save_patient_button.clicked.connect(self.TerceraVentana)
+
+    def ventana_carga_paceinte(self):
+        self.close()
+        window = load_patient_database(self)
+        window.show()
 
     def TerceraVentana(self):
         self.close()
@@ -65,6 +75,24 @@ class seleccion_paciente(QtGui.QDialog, patient_select.Ui_Dialog):
         pixmap_patient = pixmap_patient.scaled(self.patient_image_label.width(),
                                                self.patient_image_label.height())
         self.patient_image_label.setPixmap(pixmap_patient)
+
+
+
+class load_patient_database(QtGui.QDialog, patient_database_load.Ui_Dialog):
+    def __init__(self, parent=None):
+        QtGui.QDialog.__init__(self, parent)
+        self.setupUi(self)
+
+        self.load_patient_button.clicked.connect(self.Ventana_paciente_retorno)
+
+    def Ventana_paciente_retorno(self):
+        self.close()
+        window = seleccion_paciente(self)
+        window.show()
+
+
+
+
 
 
 ####################################################################################################################
@@ -86,9 +114,12 @@ class MyMainWindow(QtGui.QMainWindow, main_designer.Ui_MainWindow):
 #Barra de estado en la parte inferior de la ventana principal
 ####################################################################################################################
 
-        self.statusBar.showMessage("Prueba ID".center(130," "))
+        self.statusBar.showMessage(Id_therapist.center(130," "))
 
-        # Barra de estado en la parte inferior de la ventana principal
+
+####################################################################################################################
+# Semaforo colores de activacion.
+####################################################################################################################
 
     def color_semaforo(self,status):
 
