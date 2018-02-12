@@ -36,6 +36,18 @@ class seleccion_del_terapeuta(QtGui.QDialog, therapist_select.Ui_Dialog):
         self.therapist_image_label.setPixmap(pixmap_therapist)
 
 
+class seleccion_paciente(QtGui.QDialog, patient_select.Ui_Dialog):
+    def __init__(self, parent=None):
+        QtGui.QDialog.__init__(self, parent)
+        self.setupUi(self)
+        self.carga_imagenes_paciente()
+
+    def carga_imagenes_paciente(self):
+        pixmap_patient = QPixmap('patient_small.png')
+        pixmap_patient = pixmap_patient.scaled(self.patient_image_label.width(),
+                                               self.patient_image_label.height())
+        self.patient_image_label.setPixmap(pixmap_patient)
+
 
 ####################################################################################################################
 #Creacion de la ventana principal para guardar los datos
@@ -45,8 +57,13 @@ class MyMainWindow(QtGui.QMainWindow, main_designer.Ui_MainWindow):
         #super(MyMainWindow, self).__init__()
         QtGui.QMainWindow.__init__(self, parent)
         self.setupUi(self)
+
+        self.SYS_value.setStyleSheet("Background: white")
+        self.SYS_value.setText("Mensaje del sistema")
+
         status_pulsera=1
         self.color_semaforo(status_pulsera)
+
 ####################################################################################################################
 #Barra de estado en la parte inferior de la ventana principal
 ####################################################################################################################
