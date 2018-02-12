@@ -273,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518437606913</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="llamamientro a las formas de creacion de nuevo paciente">
+      <created>1518437610812</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1518437610812</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
