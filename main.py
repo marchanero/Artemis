@@ -98,7 +98,9 @@ class MyMainWindow(QtGui.QMainWindow, main_designer.Ui_MainWindow):
 
 if __name__ == "__main__":
     app = QtGui.QApplication(sys.argv)
-    ui = MyMainWindow()
-    #ui = seleccion_del_terapeuta()
+    #ui = MyMainWindow()
+    #ui=seleccion_paciente()
+    ui = seleccion_del_terapeuta()
     ui.show()
+
     sys.exit(app.exec_())

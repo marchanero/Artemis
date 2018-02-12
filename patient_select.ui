@@ -101,7 +101,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="therapist_id_text">
+         <widget class="QLineEdit" name="patient_id_text">
           <property name="minimumSize">
            <size>
             <width>200</width>
