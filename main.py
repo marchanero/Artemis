@@ -36,7 +36,6 @@ class seleccion_del_terapeuta(QtGui.QDialog, therapist_select.Ui_Dialog):
         self.save_therapist_button.clicked.connect(self.SegundaVentana_paciente)
 
     def SegundaVentana_paciente(self):
-
         self.close()
         window = seleccion_paciente(self)
         window.show()
@@ -49,7 +48,10 @@ class seleccion_del_terapeuta(QtGui.QDialog, therapist_select.Ui_Dialog):
                                                    self.therapist_image_label.height())
         self.therapist_image_label.setPixmap(pixmap_therapist)
 
-
+class nuevo_paciente(QtGui.QDialog, patient_data_altaBDD.Ui_Dialog):
+    def __init__(self, parent=None):
+        QtGui.QDialog.__init__(self, parent)
+        self.setupUi(self)
 
 
 class seleccion_paciente(QtGui.QDialog, patient_select.Ui_Dialog):
@@ -57,10 +59,17 @@ class seleccion_paciente(QtGui.QDialog, patient_select.Ui_Dialog):
         QtGui.QDialog.__init__(self, parent)
         self.setupUi(self)
         self.carga_imagenes_paciente()
-        self.load_patient_button.clicked.connect(self.ventana_carga_paceinte)
+        self.load_patient_button.clicked.connect(self.ventana_carga_paciente)
         self.save_patient_button.clicked.connect(self.apertura_grabacionDatos)
+        self.new_patient_button.clicked.connect(self.apertura_nuevo_paciente)
 
-    def ventana_carga_paceinte(self):
+    def apertura_nuevo_paciente(self):
+        self.close()
+        window = nuevo_paciente(self)
+        window.show()
+
+
+    def ventana_carga_paciente(self):
         self.close()
         window = load_patient_database(self)
         window.show()
@@ -82,10 +91,10 @@ class load_patient_database(QtGui.QDialog, patient_database_load.Ui_Dialog):
     def __init__(self, parent=None):
         QtGui.QDialog.__init__(self, parent)
         self.setupUi(self)
+        self.load_patient_button.clicked.connect(self.ventana_paciente_retorno)
 
-        self.load_patient_button.clicked.connect(self.Ventana_paciente_retorno)
 
-    def Ventana_paciente_retorno(self):
+    def ventana_paciente_retorno(self):
         self.close()
         window = seleccion_paciente(self)
         window.show()
@@ -109,6 +118,14 @@ class MyMainWindow(QtGui.QMainWindow, main_designer.Ui_MainWindow):
 
         status_pulsera=1
         self.color_semaforo(status_pulsera)
+
+
+
+
+
+
+
+
 
 ####################################################################################################################
 #Barra de estado en la parte inferior de la ventana principal

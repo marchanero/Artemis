@@ -4,6 +4,10 @@
     <list default="true" id="168df719-e08f-4c2a-9659-24191138ba9b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change beforePath="$PROJECT_DIR$/patient_data_altaBDD.py" afterPath="$PROJECT_DIR$/patient_data_altaBDD.py" />
+      <change beforePath="$PROJECT_DIR$/patient_data_altaBDD.ui" afterPath="$PROJECT_DIR$/patient_data_altaBDD.ui" />
+      <change beforePath="$PROJECT_DIR$/patient_select.py" afterPath="$PROJECT_DIR$/patient_select.py" />
+      <change beforePath="$PROJECT_DIR$/patient_select.ui" afterPath="$PROJECT_DIR$/patient_select.ui" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,15 +18,15 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Creacion_ventanas_Pyqt4$main.coverage" NAME="main Coverage Results" MODIFIED="1518425108802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/1_Entregable_GitHub$main.coverage" NAME="main Coverage Results" MODIFIED="1518436618806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/1_Entregable_GitHub$main.coverage" NAME="main Coverage Results" MODIFIED="1518437554311" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="60" column="77" lean-forward="false" selection-start-line="60" selection-start-column="77" selection-end-line="60" selection-end-column="77" />
+            <state relative-caret-position="286">
+              <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -260,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1518435720110</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="llamada a las funciones , para intercambiar informacion">
+      <created>1518436687748</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1518436687748</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -320,7 +331,8 @@
     <MESSAGE value="redefinicion de las ventanas de captura de datos" />
     <MESSAGE value="Creacion de la secuencia de apertura de las ventanas" />
     <MESSAGE value="creacion de la apertura y del cierra de ventanas entre la aplicacion de seleccion del paciente" />
-    <option name="LAST_COMMIT_MESSAGE" value="creacion de la apertura y del cierra de ventanas entre la aplicacion de seleccion del paciente" />
+    <MESSAGE value="llamada a las funciones , para intercambiar informacion" />
+    <option name="LAST_COMMIT_MESSAGE" value="llamada a las funciones , para intercambiar informacion" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -700,8 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="60" column="77" lean-forward="false" selection-start-line="60" selection-start-column="77" selection-end-line="60" selection-end-column="77" />
+        <state relative-caret-position="286">
+          <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
           </folding>

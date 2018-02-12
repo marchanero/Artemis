@@ -112,6 +112,13 @@
          </spacer>
         </item>
         <item>
+         <widget class="QPushButton" name="new_patient_button">
+          <property name="text">
+           <string>New patient</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QPushButton" name="load_patient_button">
           <property name="text">
            <string>Load Patient</string>
@@ -122,13 +129,6 @@
          <widget class="QPushButton" name="view_data_patient_button">
           <property name="text">
            <string>View data</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QPushButton" name="new_patient_button">
-          <property name="text">
-           <string>New patient</string>
           </property>
          </widget>
         </item>
